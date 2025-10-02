@@ -34,10 +34,19 @@ export default function UploadPage(){
     <div>
       <h2 className="text-xl font-semibold mb-4">Upload CSV / XLSX</h2>
       <form onSubmit={handleUpload} className="bg-white p-4 rounded shadow mb-4">
-        <input type="file" accept=".csv,.xlsx,.xls" onChange={e=>setFile(e.target.files[0])} />
+        <input 
+         className="block w-full text-sm text-gray-500 
+             file:mr-4 file:py-2 file:px-4
+             file:rounded-lg file:border-0
+             file:text-sm file:font-semibold
+             file:bg-blue-600 file:text-white
+             hover:file:bg-blue-700 
+             cursor-pointer"
+        type="file"  accept=".csv,.xlsx,.xls" onChange={e=>setFile(e.target.files[0])} />
+        
         <div className="mt-3">
-          <button type="submit" className="bg-slate-800 text-white px-4 py-2 rounded">Upload & Distribute</button>
-          <button type="button" onClick={fetchAssignments} className="ml-3 border px-3 py-2 rounded">Refresh Assignments</button>
+          <button type="submit" className="bg-slate-800 text-white px-4 py-2 rounded cursor-pointer">Upload & Distribute</button>
+          <button type="button" onClick={fetchAssignments} className="ml-3 border px-3 py-2 rounded cursor-pointer">Refresh Assignments</button>
         </div>
         {message && <div className="mt-2 text-sm">{message}</div>}
       </form>

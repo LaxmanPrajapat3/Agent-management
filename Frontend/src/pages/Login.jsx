@@ -37,7 +37,7 @@ export default function Login(){
           <label className="block text-sm">Password</label>
           <input type="password" value={password} onChange={e=>setPassword(e.target.value)} className="w-full border p-2 rounded" />
         </div>
-        <button className="w-full bg-slate-800 text-white p-2 rounded">Login</button>
+        <button className="w-full bg-slate-800 text-white p-2 rounded cursor-pointer">Login</button>
       </form>
       <p className="text-xs text-center mt-3 underline"><a href="/signup">SignUp</a></p>
     </div>

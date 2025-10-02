@@ -64,7 +64,7 @@ export default function Agents(){
           <input placeholder="Email" value={form.email} onChange={e=>setForm({...form,email:e.target.value})} className="w-full border p-2 rounded" />
           <input placeholder="+91XXXXXXXXXX" value={form.mobile} onChange={e=>setForm({...form,mobile:e.target.value})} className="w-full border p-2 rounded" />
           <input placeholder="Password" type="password" value={form.password} onChange={e=>setForm({...form,password:e.target.value})} className="w-full border p-2 rounded" />
-          <button className="w-full bg-slate-800 text-white p-2 rounded">Create</button>
+          <button className="w-full bg-slate-800 text-white p-2 rounded cursor-pointer">Create</button>
         </form>
       </div>
     </div>

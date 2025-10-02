@@ -85,11 +85,11 @@ const Signup = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-slate-800 text-white p-2 rounded"
+            className="w-full bg-slate-800 text-white p-2 rounded cursor-pointer"
           >
             {loading ? "Creating..." : "Create Admin"}
           </button>
-          <p className="text-center underline"><a href="/login">Login</a></p>
+          <p className="text-center underline cursor-pointer"><a href="/login" className="cursor-pointer">Login</a></p>
         </form>
 
         {message && (
