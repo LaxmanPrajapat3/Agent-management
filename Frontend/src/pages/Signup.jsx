@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import { useNavigate } from 'react-router-dom';
 const Signup = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,7 +10,7 @@ const Signup = () => {
 
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-
+ const navigate = useNavigate();
   // handle input changes
   const handleChange = (e) => {
     setFormData({
@@ -31,6 +31,7 @@ const Signup = () => {
       });
 
       setMessage(res.data.message || "Admin created successfully ✅");
+      navigate('/login');
     } catch (err) {
       setMessage(
         err.response?.data?.message || "Error creating admin ❌"
