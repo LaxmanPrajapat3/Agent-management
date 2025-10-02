@@ -43,7 +43,7 @@ README.md
 
 ⚙️ Installation
 1️⃣ Clone the repo
-git clone https://github.com/LaxmanPrajapat3/Agent-management
+git clone https://github.com/LaxmanPrajapat3/Agent-management.git
 
 cd Agent-management
 
