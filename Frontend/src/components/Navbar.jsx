@@ -19,6 +19,9 @@ export default function Navbar(){
           <Link to="/agents" className="hover:underline">Agents</Link>
           <Link to="/upload" className="hover:underline">Upload</Link>
           {token ? <button onClick={logout} className="text-red-600">Logout</button> : <Link to="/login">Login</Link>}
+          {!token?
+            <Link to="/signup">signup</Link>:""
+          }
         </div>
       </div>
     </nav>

@@ -39,7 +39,7 @@ export default function Login(){
         </div>
         <button className="w-full bg-slate-800 text-white p-2 rounded">Login</button>
       </form>
-      <p className="text-xs text-muted mt-3">Tip: Use the /api/auth/init endpoint to create the admin on first run.</p>
+      <p className="text-xs text-center mt-3 underline"><a href="/signup">SignUp</a></p>
     </div>
   );
 }

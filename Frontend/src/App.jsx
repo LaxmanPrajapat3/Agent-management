@@ -6,6 +6,7 @@ import Agents from './pages/Agents';
 import UploadPage from './pages/UploadPage';
 import PrivateRoute from './components/PrivateRoute';
 import Navbar from './components/Navbar';
+import Signup from './pages/Signup';
 
 function App(){
   return (
@@ -13,6 +14,7 @@ function App(){
       <Navbar />
       <div className="max-w-5xl mx-auto p-4">
         <Routes>
+           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<PrivateRoute><Dashboard/></PrivateRoute>} />
           <Route path="/agents" element={<PrivateRoute><Agents/></PrivateRoute>} />
